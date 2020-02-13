@@ -1,0 +1,14 @@
+1 - télécharger une image linux alpine et lister les répertoires qu'elle contient à la racine.
+
+docker run -it alpine
+ls 
+>>>>>
+bin    dev    etc    home   lib    media  mnt    opt    proc   root   run    sbin   srv    sys    tmp    usr    var
+
+2 - Lancer le fichier caisseAuto.sh a partir du terminal de
+commande d'un conteneur debian à l'aide d'un Dockerfile
+
+docker build -t exo1 .
+run -it exo1
+ls
+./caisseAuto.sh
